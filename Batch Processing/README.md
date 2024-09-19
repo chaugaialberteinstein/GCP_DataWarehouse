@@ -1,8 +1,4 @@
-**NOTE**: 
 
-Cause of security, I am not uploading the key.json file on the folder cloud function, you can take it from your cloud Google console
-
-=================================
 
 **Project Description:**
 
