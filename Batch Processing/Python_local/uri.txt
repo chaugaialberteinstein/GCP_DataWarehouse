@@ -1,0 +1,1 @@
+mongodb://admin1:123456a%40@35.247.189.152:27017/?authMechanism=DEFAULT
