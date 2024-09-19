@@ -14,15 +14,19 @@ Mô tả chi tiết:
 Tạo một Compute Engine instance và cài đặt MongoDB.
 Restore dữ liệu từ MongoDB local lên MongoDB trên VM.
 Tham khảo: https://www.youtube.com/watch?v=AxrA35Itv64, https://www.youtube.com/watch?v=PMvp9MDKrJI&t=194s
+
 2. Đồng bộ dữ liệu lên GCS:
 
 Sử dụng FileZilla để backup dữ liệu từ MongoDB lên GCS.
 Lịch: Hàng ngày lúc 20h.
 Tự động hóa: Sử dụng Crontab và Cloud Function để trigger.
+
+
 3. Thiết kế Data Warehouse:
 
 BigQuery: Thiết kế schema và load dữ liệu từ GCS.
 Data mart: Tạo một table data mart về seller và sản phẩm.
+
 4. Phân tích dữ liệu:
 
 Data Studio: Kết nối với BigQuery và tạo dashboard:
@@ -30,11 +34,13 @@ Số lượng sản phẩm đã bán theo danh mục.
 Phân bố sản phẩm của các nhãn hàng Trung Quốc theo danh mục.
 Mối quan hệ giữa rating và giá sản phẩm.
 Top 10 seller nhiều sản phẩm nhất.
+
 5. Tự động hóa:
 
 Sử dụng Crontab và Cloud Function để:
 Đồng bộ dữ liệu từ MongoDB lên GCS.
 Trigger load dữ liệu từ GCS vào BigQuery.
+
 6. Tối ưu hóa chi phí:
 
 Đánh giá: Đánh giá chi phí sử dụng của các thành phần (Compute Engine, Storage, BigQuery).
