@@ -1,0 +1,51 @@
+project5
+
+Done Vm Mongo
+
+1. Json -> jsonline
+Code py ở server mongo
+ convert json to jsonline
+Dùng file zilla convert (flow.txt for some hints)
+
+
+
+
+2. Big Query
+2.1. Thiết kế datawarehouse
+Upload jsonl to gcs (datalake)
+tao dataset
+tao table
+
+paste schema vô text khi tạo dataset trên BigQuery
+
+FRIDay 2.2. Table data mart 
+
+2.3. connect data studio - Tạo table 
+
+
+Cần bucket
+3. Cloud function - trigger (bắt sự kiện thay đổi ở gcs)
+
+
+3.1. Imports:
+
+3.2. Schema Formatting Function: format_schema(schema)
+
+3.3. Cloud Function: auto_push_data_to_gbq(cloud_event)
+
+3.4. 
+authen https://help.brightdata.com/hc/en-us/articles/6254819504145-How-to-find-your-Google-Cloud-Private-Key
+
+	Google Functions
+GCS Event Triggers : for capture event, file metadata
+Load data from GCS to BigQuery
+
+	- create cloud function
+format_schema
+auto_push_data_to_gbq
+
+- Add trigger(Cloud Storage trigger)
+
+key.json để authen client big query
+
+4. Crontab

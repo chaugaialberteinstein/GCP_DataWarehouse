@@ -1,0 +1,16 @@
+SELECT
+	a.name,
+	a.link,
+	count(a.name) as count_sellers,
+	ARRAY_AGG(s.id) AS list_id_products,
+	ARRAY_AGG(s.name) AS list_name_products
+FROM iD.DATASET.products as s
+UNNEST (current_seller) as a
+GROUP BY a.name , a.link
+ORDER BY count(1) DESC
+	seller_datamart
+name
+link
+count_sellers
+list_id_products
+list_name_products

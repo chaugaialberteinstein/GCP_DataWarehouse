@@ -1,0 +1,26 @@
+https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.cherryservers.com%2Fblog%2Fhow-to-install-and-start-using-mongodb-on-ubuntu-20-04%3Ffbclid%3DIwAR0ZlBEjezXksiFBLew-4FWf8VtsDIG-XTrjJURvqOSB9R8A09nXEfk5fK8&h=AT3vuDZugBic-bBZqk11nPdzfvzCk-MnIM6UpPzwWL9lRdHC09ukym5dzdGcQC8_fvkFwvu8-pJUFP8ToLFqZW98rBdXeKNBoEjEZMdE_tmpKGr5eRFazm0rR84TWYd3Drepmg
+
+sudo apt get update
+sudo apt update
+sudo apt install mongo
+sudo apt install mongodb
+Y
+service mongo status
+service mongodb status
+nano /etc/mongodb.conf
+sudo nano /etc/mongodb.conf
+service mongodb restart
+service mongodb restart
+sudo -i
+nano /etc/mongodb.conf
+mongo
+
+
+db.createUser({
+...   user: "admin1",
+...   pwd: "123456a@",
+...   roles: [{ role: "readWrite", db: "data_tiki_products" }]
+... })
+
+service mongodb restart
+

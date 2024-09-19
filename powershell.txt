@@ -1,0 +1,103 @@
+py .\sks.py
+pip install pymongo
+pip install bs4
+ pip install mysql
+ py .\task3_MongoMySQL.py
+pip install mysql-connector-python
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task3_MongoMySQL.py
+pip install matplotlib
+ & "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task4_China.py
+
+ pip install pandas
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe"
+
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task4.3_test.py
+ & "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task5.py       
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task4.3_stats.py
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task4_Subcategory.py
+
+
+
+ import sqlalchemy
+>> import pandas as pd
+>>
+>> # Define the database connection URL
+>> db_url = "mysql://root:123456@localhost/tikidata"
+>>
+>> # Create a SQLAlchemy engine
+>> engine = sqlalchemy.create_engine(db_url)
+>>
+>> # Define your SQL query
+>> query = "SELECT category_id, COUNT(*) as product_count FROM final GROUP BY category_id"
+>>
+>> # Execute the query and fetch the results into a DataFrame
+>> df = pd.read_sql(query, con=engine)
+>>
+>> # Close the database connection
+>> engine.dispose()
+>>
+>> # Save the results to an Excel file
+>> df.to_excel('Task4_CategoriesId_product_counts.xlsx', index=False)
+>> & "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/subcate_test.py
+
+
+ pip install sqlalchemy
+
+
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/subcate_test.py
+
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/task4.2_China.py
+
+& "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/project4/Code/task3_MongoMySQL.py
+
+ pwd
+
+git branch -M main
+
+dir
+
+git pull -u origin main
+
+
+ git commit "hi"
+
+git pull --rebase origin branchname
+
+ git push origin branchname
+
+
+git push --no-verify
+
+git remote add origin https://github.com/chaugaialberteinstein/DEC04_SQL-NoSQL.git
+
+git commit -m "new changes"
+
+git push origin hello
+git config --global user.email "hathanhnga216@gmail.com"
+
+ git config --global user.name "chaugaialberteinstein"
+
+git commit -m "first commit"
+
+git push -u origin main
+ git push -u origin master
+venv\scripts\activate.bat
+
+python3 -V
+sudo apt install python3-venv
+pip install -r requirements.txt
+pip install gcs
+cd htn
+py .\requirements.txt
+ & "C:/Users/APC 151/AppData/Local/Programs/Python/Python311/python.exe" d:/checmet/htn/main.py
+
+pip install gcs
+pip install google-cloud-storage
+>>
+gcloud cloud-shell ssh
+ssh
+
+ssh root@35.247.189.152
+
+
+
